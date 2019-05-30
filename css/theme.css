@@ -1,0 +1,344 @@
+
+* {
+	margin: 0;
+}
+html {
+	height: 100%;
+}
+body{
+	background: url('../images/background4.jpg') #333 fixed center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	margin:0;
+	overflow-x:hidden;
+}
+#header img{
+	position:center-center;
+	margin-left:auto;
+	margin-right:auto;
+	padding:1px;
+	float:left;
+	height:220px;
+}
+#container{
+	min-height: 100%;
+	margin: 0 auto -100px;
+}
+nav ul{
+	width:100%;
+	margin:0px;
+	padding:0px;
+}
+nav li{
+	display:block;
+}
+nav a:hover{
+	background-color:#0A0A0A;
+	background-color: rgba(16,16,16,0.6);
+	color:white;
+	outline:none;
+}
+nav a:active, a:focus{
+	outline:none; !important;
+}
+/* We implemented this (outline:none; !important;)to eliminate a small issue with microsoft edge when viewing the webpage, in that an outline would appear around
+list items on the nav bar when hovering over them, which looked inconsistent */
+nav a{
+	padding-top:18px;
+	padding-bottom:18px;
+	list-style-type:none;
+	float:left;
+	width:16.66666667%;
+	height:4%;
+	text-decoration:none;
+	font-family:"Segoe UI", Arial, sans-serif;
+	text-align:center;
+	padding-left:0px;
+	padding-right:0px;
+	margin:0px;
+	background: url(../images/navbar.png) repeat-x;
+	color:white;
+}
+/*background: url(navbar.png) repeat-x; was put in to achieve a transition effect for the nav bar, making it a little more
+transparent and to give it a gradient effect which we thought looked very professional */
+#navbar{
+	width:100%;
+	height:50px;
+	margin-bottom:30px;
+}
+#footer{
+	width:100%;
+	background-color:#0A0A0A;
+	background-color: rgba(16,16,16,0.6);
+	float:left;
+	padding-top:1px;
+}
+/* ^ The background effect here was put in to give a transparent grey/black background
+behind images and text so that it is more visible and looks more professional*/
+#footer, .push {
+	height: 18%;
+}
+/* ^ The .push class was used here to make the footer stay at the bottom of the webpage*/
+#footer p{
+	color:white;
+	float:right;
+	width:20%;
+	font-family:Perpetua Titling MT;
+	font-size:10px;
+	padding-top:0.5%;
+	margin-right:2%;
+	margin-top:1%;
+	text-align:center;
+}
+#intro{
+	width:68%;
+	border-radius:4px;
+	background-color:#0A0A0A;
+	background-color: rgba(16,16,16,0.6);
+	margin-right:5%;
+	float:right;
+	margin-top:20%;
+}
+#intro p{
+	color:white;
+	font-size:300%;
+	padding:8px;
+	font-family:Bradley Hand ITC;
+}
+#booking ul
+{
+	list-style-type:none;
+	width:20%;
+	background-color:#0A0A0A;
+	background-color: rgba(16,16,16,0.6);
+	float:right;
+	margin:0;
+	margin-bottom:5%;
+	margin-top:10%;
+	padding:0;
+	height:350px;
+	border-radius:4px;
+}
+#booking li{
+	width:100%;
+	padding-left:20px;
+	margin-right:20px;
+	color:white;
+	font-family:"Segoe UI", Arial, sans-serif;
+	height:38px;
+	padding-top:12px;
+}
+#booking li:hover{
+	background-color:#121212;
+	background-color: rgba(16,16,16,0.6);
+}
+.Room-image img{
+	width:80%;
+	height:80%;
+	border-radius:4px;
+	padding:1%;
+	position:center-center;
+	margin:auto;
+}
+.imgFix {
+	height: 90% !important;
+}
+/* ^ This was a fix implemented to combat a problem we had with the penthouse div on the booking page. The
+problem was that the image was moving to the side of the div and down to the bottom, making it look wrong and
+out of place. I could not find an issue with the html or css and so implemented this fix to solve the issue. I
+first suspected that it was because of the size of the penthouse image, but after experimenting with other images
+and finding no solution, I implemented this.*/
+#Single, #Double, #Family, #Twin, #PremiumSingle, #PremiumDouble, #Penthouse {
+	display: none;
+	margin:0;
+	padding:1%;
+	position:absolute;
+	margin-left:8%;
+	width:64%;
+	height:50%;
+	background-color:#0A0A0A;
+	background-color:rgba(16,16,16,0.6);
+	border-radius:4px;
+	color:white;
+	font-family:Bradley Hand ITC;
+	float:left;
+	top: 40%;
+}
+#Single, #Double, #Family, #Twin, #PremiumSingle, #PremiumDouble, #Penthouse h2 {
+	padding:10px;
+	text-align:center;
+}
+#images{
+	width:96%;
+	margin-left:2%;
+	margin-bottom:5%;
+	background-color:#0A0A0A;
+	background-color: rgba(16,16,16,0.6);
+	border-radius:4px;
+	padding-top:1%;
+	padding-bottom:2%;
+	height:22%;
+	float:left;
+}
+#images img{
+	width:18%;
+	height:100%;
+	float:left;
+	margin:0.7%;
+	border-radius:4px;
+	border: solid 2px white;
+}
+#display{
+	width:80%;
+	height:80%;
+	margin-left:10%;
+	margin-bottom:4%;
+	float:left;
+	background-color:#0A0A0A;
+	background-color: rgba(16,16,16,0.6);
+	border-radius:4px;
+	padding:0.001px;
+
+}
+#display img{
+	margin-left:10%;
+	margin-top:6%;
+
+}
+#display2c{
+	font-family:Bradley Hand ITC;
+	text-align:center;
+	color:white;
+	font-size:24px;
+}
+#map{
+	width:60%;
+	background-color:#0A0A0A;
+	background-color: rgba(16,16,16,0.6);
+	border-radius:4px;
+	color:white;
+	font-family:Bradley Hand ITC;
+	font-size:24px;
+	margin-bottom:100px;
+	float:right;
+	margin-top:15%;
+}
+#map iframe{
+	width:80%;
+	margin-left:10%;
+	height:400px;
+	margin-bottom:5%;
+}
+#map p{
+	width:40%;
+	margin-left:30%;
+
+}
+#aboutlocation{
+	width:30%;
+	margin-left:5%;
+	margin-top:1%;
+	background-color:#0A0A0A;
+	background-color: rgba(16,16,16,0.6);
+	border-radius:4px;
+	float:left;
+}
+#aboutlocation p{
+	padding:4%;
+	color:white;
+	font-family:Bradley Hand ITC;
+	font-size:28px;
+}
+#Addcomment{
+	width:25%;
+	margin-top:10%;
+	margin-right:10%;
+	float:right;
+	background-color:#0A0A0A;
+	background-color: rgba(16,16,16,0.6);
+	border-radius:4px;
+	color:white;
+	font-family:Bradley Hand ITC;
+	font-size:22px;
+	padding:1%;
+}
+#Addcomment input, #Addcomment textarea, #Addcomment h4{
+	padding:2%;
+	margin-left:8%;
+	margin-top:10%;
+}
+#Addcomment input, #Addcomment textarea{
+	width:80%;
+}
+#Addcomment button{
+	width:30%;
+	padding-left:4%;
+	padding-right:4%;
+	margin-left:12%;
+	margin-top:10%;
+	float:left;
+}
+#Reviews{
+	width:25%;
+	margin-left:25%;
+	float:left;
+	padding:2%;
+}
+#Reviews span{
+	background-color:#0A0A0A;
+	background-color: rgba(16,16,16,0.6);
+	border-radius:4px;
+	font-family:Bradley Hand ITC;
+	font-size:28px;
+	color:white;
+	display:block;
+	margin-bottom:10%;
+	padding:2%;
+}
+#area{
+	width:40%;
+	border-radius:4px;
+	background-color:#0A0A0A;
+	background-color: rgba(16,16,16,0.6);
+	margin-right:5%;
+	margin-top:24%;
+	margin-left:5%;
+}
+#area p{
+	color:white;
+	font-size:26px;
+	padding:8px;
+	font-family:Bradley Hand ITC;
+}
+#attractionimage{
+	width:50%;
+	background-color:#0A0A0A;
+	background-color: rgba(16,16,16,0.6);
+	border-radius:4px;
+	color:white;
+	font-family:Bradley Hand ITC;
+	font-size:24px;
+	margin-bottom:100px;
+	float:right;
+	margin-top:5%;
+}
+#attractionimage img{
+	width:90%;
+	height:90%;
+	margin-left:5%;
+	margin-top:2.5%;
+	margin-bottom:2.5%;
+	border-radius:4px;
+}
+@media screen and (max-width:640px){
+	body{
+		font-size:10px;
+	}
+	#footer p{
+		font-size:6px;
+	}
+	#header img{
+		height:100px;
+	}
+}
